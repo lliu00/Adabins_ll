@@ -1,0 +1,19 @@
+--data_path /ssd/dataset/kitti_dataset_bts
+--gt_path /ssd/dataset/kitti_dataset_bts/data_depth_annotated
+--filenames_file ./train_test_inputs/kitti_eigen_train_files_with_gt.txt
+
+--input_height 376
+--input_width 1241
+--min_depth 1e-3
+--max_depth 80
+
+--data_path_eval /ssd/dataset/kitti_dataset_bts
+--gt_path_eval /ssd/dataset/kitti_dataset_bts/data_depth_annotated
+--filenames_file_eval ./train_test_inputs/kitti_eigen_test_files_with_gt.txt
+--min_depth_eval 1e-3
+--max_depth_eval 80
+--garg_crop
+--do_kb_crop
+--dataset kitti
+--checkpoint_path /ssd/ll/AdaBins/checkpoints_3/UnetAdaptiveBins_24-Jul_23-25-nodebs8-tep25-lr0.000357-wd0.1-5b6fa120-4460-4b06-9e0c-cb8457d25a97_best.pt
+--save_dir predictions_kitti

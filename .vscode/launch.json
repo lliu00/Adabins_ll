@@ -1,0 +1,32 @@
+{
+  
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            
+            "args": ["--data_path", "/data1/dataset/rvc2022/depth/datasets_mpi_sintel/train",
+            "--gt_path", "/data1/dataset/rvc2022/depth/datasets_mpi_sintel/train",
+            "--filenames_file","/ssd/ll/AdaBins/foo_train.txt",
+            
+            "--input_height", "436",
+            "--input_width", "1024",
+            "--min_depth", "1e-3",
+            "--max_depth", "80",
+            
+            "--data_path_eval", "/data1/dataset/rvc2022/depth/datasets_mpi_sintel/train",
+            "--gt_path_eval", "/data1/dataset/rvc2022/depth/datasets_mpi_sintel/train",
+            "--filenames_file_eval", "/ssd/ll/AdaBins/foo_eval.txt",
+            "--min_depth_eval", "1e-3",
+            "--max_depth_eval", "80",
+            
+            "--dataset", "kitti",
+            "--checkpoint_path", "/ssd/ll/AdaBins/checkpoints_5/UnetAdaptiveBins_27-Aug_15-45-nodebs16-tep300-lr0.000357-wd0.1-d29742a3-cb17-40a8-bd55-b1d7e6daa1a1_latest.pt",
+            "--save_dir","/ssd/ll/AdaBins/predictions_kitti"]
+        }
+    ]
+}

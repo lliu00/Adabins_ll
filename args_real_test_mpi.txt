@@ -1,0 +1,19 @@
+--data_path /data1/dataset/mpi_sintel_test/test/
+--gt_path /data1/dataset/mpi_sintel_test/test/
+--filenames_file ./foo_train.txt
+
+--input_height 436
+--input_width 1024
+--min_depth 1e-3
+--max_depth 80
+
+--data_path_eval /data1/dataset/mpi_sintel_test/test/
+--gt_path_eval /data1/dataset/mpi_sintel_test/test/
+--filenames_file_eval ./foo_test.txt
+--min_depth_eval 1e-3
+--max_depth_eval 80
+--garg_crop 
+--do_kb_crop 
+--dataset kitti
+--checkpoint_path /ssd/ll/NeWCRFs/models/newcrfs_sintel/model-16100-best_rms_1.15024
+--save_dir predictions_kitti
